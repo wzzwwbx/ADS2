@@ -1,7 +1,7 @@
 from gensim import corpora, models, similarities
 f = open('data/AR/user-info-train.txt', 'r')
 corpus_lsi = open('data/corpus_lsi.txt', 'r')
-output = open('data/user_profile.txt', 'w')
+# output = open('data/user_profile.txt', 'w')
 user_profile_list = list()
 user_like_list = list()
 i = 1
@@ -70,7 +70,7 @@ for user_like_list in user_profile_list:
 # 			sumed_tuple_list = tuple_list_sum(i, sumed_tuple_list)
 # 	# print len(user_like_lsi)
 	avg_tuple_list = tuple_list_average(sumed_tuple_list, len(user_like_list))
-	output.write(str(avg_tuple_list) + '\n')
+	# output.write(str(avg_tuple_list) + '\n')
 	avg_profile_lsi.append(avg_tuple_list)
 # 	# print len(avg_profile_lsi)
 # 	# break
