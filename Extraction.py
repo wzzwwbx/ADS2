@@ -45,7 +45,7 @@ corpus_tfidf = tfidf[corpus]
 lsi = models.LsiModel.load('data/lsi.model')
 # lsi.save('data/lsi.model')
 # lsi.load('data/lsi.npy')
-# print lsi.print_topics(10)
+# print lsi.print_topics(50)
 corpus_lsi = lsi[corpus_tfidf]
 index = similarities.MatrixSimilarity.load('data/index.lsi_index')
 query_list = list()
