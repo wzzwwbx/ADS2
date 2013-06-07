@@ -1,4 +1,4 @@
-# import nltk
+import nltk
 import re
 from gensim import corpora, models, similarities
 

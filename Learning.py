@@ -3,7 +3,7 @@ from gensim import corpora, models, similarities
 def str_to_lsi(item, corpus_lsi_list):
 	corpus_lsi = list()
 	for elem in eval(corpus_lsi_list[item - 1]):
-		query_lsi.append(elem)
+		corpus_lsi.append(elem)
 	return corpus_lsi
 
 def tuple_sum(tuple_1, tuple_2):
